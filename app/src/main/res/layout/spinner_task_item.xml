@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardViewTaskItem"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_65sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#FFF2DE"
+    app:cardCornerRadius="@dimen/_15sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:src="@drawable/task_item_decor_img"/>
+
+        <TextView
+            android:id="@+id/taskName"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:maxWidth="@dimen/_120sdp"
+            android:maxHeight="@dimen/_40ssp"
+            android:text="Task"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/taskIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40/40"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_16sdp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/custom_utilities_button"/>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <corners
+                android:radius="@dimen/_3sdp" />
+
+            <solid
+                android:color="#A7C3DD"
+                />
+
+
+            <size
+                android:width="@dimen/_12sdp"
+                android:height="@dimen/_12sdp" />
+
+        </shape>
+    </item>
+</layer-list>

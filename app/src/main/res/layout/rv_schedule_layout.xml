@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvSchedule"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardBackgroundColor="#F7F7F7">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gioHoc"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/cv_schedule_time_2"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:text="10:00am - 12:00am"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tenMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:text="Lập trình với Python"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/phongHoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/_130sdp"
+                android:text="201A-A3"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="#AFAFAF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" • "
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#AFAFAF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tenGiangVien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vũ Minh Mạnh"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="#AFAFAF"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

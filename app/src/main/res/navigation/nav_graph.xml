@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.btl_java_studyapp.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.btl_java_studyapp.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/optionsFragment"
+        android:name="com.example.btl_java_studyapp.fragments.OptionsFragment"
+        android:label="fragment_options"
+        tools:layout="@layout/fragment_options" >
+        <action
+            android:id="@+id/action_optionsFragment_to_chatbotActivity"
+            app:destination="@id/chatbotActivity" />
+        <action
+            android:id="@+id/action_optionsFragment_to_pomodoroFragment2"
+            app:destination="@id/pomodoroFragment" />
+        <action
+            android:id="@+id/action_optionsFragment_to_scoreTableActivity"
+            app:destination="@id/scoreTableActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.btl_java_studyapp.fragments.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <activity
+        android:id="@+id/chatbotActivity"
+        android:name="com.example.btl_java_studyapp.activities.ChatbotActivity"
+        android:label="ChatbotActivity" />
+    <fragment
+        android:id="@+id/pomodoroFragment"
+        android:name="com.example.btl_java_studyapp.fragments.PomodoroFragment"
+        android:label="fragment_pomodoro"
+        tools:layout="@layout/fragment_pomodoro" >
+        <action
+            android:id="@+id/action_pomodoroFragment_to_optionsFragment2"
+            app:destination="@id/optionsFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/scoreTableActivity"
+        android:name="com.example.btl_java_studyapp.activities.ScoreTableActivity"
+        android:label="ScoreTableActivity" />
+</navigation>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="@dimen/_150sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_16sdp"
+    android:layout_marginLeft="@dimen/_18sdp"
+    android:background="@drawable/card_radius_border">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarImageView2"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ptit_logo_img"/>
+
+        <TextView
+            android:id="@+id/tenMonHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="12dp"
+            android:text="Lập trình hướng đối tượng"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatarImageView2" />
+
+        <TextView
+            android:id="@+id/gioHocHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="12dp"
+            android:text="Hôm nay, 09:00am"
+            android:textColor="#969696"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tenMonHome" />
+
+        <TextView
+            android:id="@+id/phongHocHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_75sdp"
+            android:text="403A2"
+            android:textColor="#969696"
+            app:layout_constraintBottom_toBottomOf="@+id/gioHocHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gioHocHome"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarImageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="12dp"
+            android:background="#CDDAE9"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gioHocHome"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            android:src="@drawable/home_teacher_img"/>
+
+        <TextView
+            android:id="@+id/tenGiangVienHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Nguyễn Mạnh Sơn"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/avatarImageView3"
+            app:layout_constraintStart_toEndOf="@+id/avatarImageView3"
+            app:layout_constraintTop_toTopOf="@+id/avatarImageView3" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/todoChip"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginEnd="16dp"
+            android:text="School"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_12ssp"
+            app:chipBackgroundColor="#FF9900"
+            app:chipCornerRadius="12dp"
+            app:chipEndPadding="@dimen/_1sdp"
+            app:chipIcon="@null"
+            app:chipStartPadding="@dimen/_1sdp"
+            app:chipStrokeWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/avatarImageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/avatarImageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

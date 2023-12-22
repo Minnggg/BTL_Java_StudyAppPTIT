@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Home"
+        android:id="@+id/homeFragment"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home"/>
+    <item android:title="Schedule"
+        android:id="@+id/scheduleFragment"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_schedule"/>
+    <item android:title="Options"
+        android:id="@+id/optionsFragment"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu"/>
+    <item android:title="Account"
+        android:id="@+id/accountFragment"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_account"/>
+
+</menu>

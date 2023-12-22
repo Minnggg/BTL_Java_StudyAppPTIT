@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_40sdp"
+    android:layout_height="@dimen/_55sdp"
+    android:id="@+id/linear_calendar"
+    android:layout_margin="@dimen/_2sdp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/rectangle_outline"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_calendar_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_calendar_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon"
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"/>
+
+</LinearLayout>
